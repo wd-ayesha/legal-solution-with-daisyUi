@@ -18,6 +18,14 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- tailwind css custom styles -->
     <style type="text/tailwindcss">
       @theme {
@@ -31,8 +39,96 @@
   </head>
   <body>
     <!-- header -->
-    <header></header>
-
+    <header class="container mx-auto w-3/4">
+      <!-- navbar section -->
+      <nav class="py-8">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+                <li>
+                  <a class="hover:bg-transparent hover:text-legalPrimary"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:bg-transparent hover:text-legalPrimary"
+                    >Services
+                  </a>
+                </li>
+                <li>
+                  <a class="hover:bg-transparent hover:text-legalPrimary"
+                    >Cases</a
+                  >
+                </li>
+                <li>
+                  <a class="hover:bg-transparent hover:text-legalPrimary"
+                    >Blog
+                  </a>
+                </li>
+                <li>
+                  <a class="hover:bg-transparent hover:text-legalPrimary"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <img class="hidden md:block" src="./images/logo2.png" alt="" />
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-gray-500">
+              <li>
+                <a class="hover:bg-transparent hover:text-legalPrimary">Home</a>
+              </li>
+              <li>
+                <a class="hover:bg-transparent hover:text-legalPrimary"
+                  >Services <i class="fa-solid fa-greater-than"></i
+                ></a>
+              </li>
+              <li>
+                <a class="hover:bg-transparent hover:text-legalPrimary"
+                  >Cases <i class="fa-solid fa-greater-than"></i
+                ></a>
+              </li>
+              <li>
+                <a class="hover:bg-transparent hover:text-legalPrimary"
+                  >Blog <i class="fa-solid fa-greater-than"></i
+                ></a>
+              </li>
+              <li>
+                <a class="hover:bg-transparent hover:text-legalPrimary"
+                  >Contact Us <i class="fa-solid fa-greater-than"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn bg-legalPrimary text-white text-lg rounded-lg"
+              >Free Consultation</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- main -->
     <main></main>
 
